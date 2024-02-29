@@ -1,0 +1,7 @@
+Per spiegare bene l'invio di pacchetti da una macchina con una rete 'x' ad una macchina con rete 'y' possiamo trattare brevemente i primi 3 livelli del modello ISO/OSI.
+Per prima cosa bisogna trovare l'ip della macchina con rete diversa e possiamo farlo grazie al DNS(trasforma il dominio del server nell'ip corrispondente. Un altra cosa fondamentale sarà l'uso di un router che sarà collegato ad entrambe le reti con un indirizzo ip e indirizzo MAC per ciascuna rete.
+LIVELLO 1: Il pacchetto viene inviato dal PC attraverso il cavi e connessioni fino al prossimo hop(switch della sua rete).
+LIVELLO 2: Lo switch riceve il pacchetto e, utilizzando l'indirizzo MAC inVIA il pacchetto attraverso il collegamento con iL successivo hop(router).
+LIVELLO 3: Il router riceve il pacchetto e lo spedirà verso l'ip di destinazione nel percorso più veloce.. Il router cambierà l'indirizzo MAC ricevuto con l'indirizzo MAC della rete 'y' e raggiungerà il prossimo hop(switch rete 'y')
+LIVELLO 2: Lo switch della rete 'y' riceve il pacchetto dal router e lo inoltra all'indirizzo ip specificato all'inizio.
+LIVELLO 1: Il pacchetto arriverà finalmente, passando da una rete all'altra, all'inidirizzo ip finale.
